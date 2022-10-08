@@ -3,11 +3,12 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220923100857">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap&_v=20220923100857" rel="stylesheet">
-    <script src="./files/libs/jquery-3.6.1.min.js?_v=20220923100857"></script>
-    <script src="./files/libs/slick-1.8.1/slick/slick.js?_v=20220923100857"></script>
-    <script src="./js/app.min.js?_v=20220923100857"></script>
+    <link rel="stylesheet" href="css/style.css?_v=20221008104449">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap&_v=20221008104449" rel="stylesheet">
+    <script defer src="./files/libs/jquery-3.6.1.min.js?_v=20221008104449"></script>
+    <script defer src="./files/libs/slick/slick.js?_v=20221008104449"></script>
+    <script defer src="./files/libs/mixitup/dist/mixitup.js?_v=20221008104449"></script>
+    <script defer src="./js/app.min.js?_v=20221008104449"></script>
     <title>Главная</title>
 </head> 
     <body>
@@ -39,26 +40,7 @@
                    </li>
                </ul>
            </nav>
-           <button class="header__btn none">
-               <img src="./img/icon_menu.svg" alt="">
-           </button>
            
-
-           <div class="rightside__menu rightside__menu--close">
-               <button class="rightside__menu-close">
-                   <img src="./img/close.svg" alt="">
-               </button>
-               <div class="rightside__menu-content">
-                   <picture><source srcset="./img/big-logo.webp" type="image/webp"><img class="rightside__menu-logo" src="./img/big-logo.png" alt=""></picture>
-                   <h4 class="rightside__menu-title">
-                       Furniture for life
-                   </h4>
-                   <p class="rightside__menu-text">
-                       Sustainable hot chicken skateboard, dreamcatcher meggings actually squid. Slow-carb everyday carry +1 art party microdosing, put a bird on it brooklyn
-                   </p>
-                   <picture><source srcset="./img/rightside-img.webp" type="image/webp"><img class="rightside__menu-img" src="./img/rightside-img.jpg" alt=""></picture>
-               </div>
-           </div>
        </div>
    </div>
 </header>
@@ -123,7 +105,7 @@
       <div class="collection">
 
          <div class="collection__item">
-            <picture><source srcset="./img/page/collection-1.webp" type="image/webp"><img class="collection__img" src="./img/page/collection-1.jpg" alt=""></picture>
+            <picture><source srcset="./img/page/collection1.webp" type="image/webp"><img class="collection__img" src="./img/page/collection1.jpg" alt=""></picture>
             <div class="collection__info">
                <h6 class="collection__info-title">
                   Truffaut literally trust
@@ -135,7 +117,7 @@
          </div>
 
          <div class="collection__item">
-            <picture><source srcset="./img/page/collection-2.webp" type="image/webp"><img class="collection__img" src="./img/page/collection-2.jpg" alt=""></picture>
+            <picture><source srcset="./img/page/collection2.webp" type="image/webp"><img class="collection__img" src="./img/page/collection2.jpg" alt=""></picture>
             <div class="collection__info">
                <h6 class="collection__info-title">
                   Truffaut literally trust
@@ -147,7 +129,7 @@
          </div>
 
          <div class="collection__item">
-            <picture><source srcset="./img/page/collection-3.webp" type="image/webp"><img class="collection__img" src="./img/page/collection-3.jpg" alt=""></picture>
+            <picture><source srcset="./img/page/collection3.webp" type="image/webp"><img class="collection__img" src="./img/page/collection3.jpg" alt=""></picture>
             <div class="collection__info">
                <h6 class="collection__info-title">
                   Truffaut literally trust
@@ -159,7 +141,7 @@
          </div>
 
          <div class="collection__item">
-            <picture><source srcset="./img/page/collection-4.webp" type="image/webp"><img class="collection__img" src="./img/page/collection-4.jpg" alt=""></picture>
+            <picture><source srcset="./img/page/collection4.webp" type="image/webp"><img class="collection__img" src="./img/page/collection4.jpg" alt=""></picture>
             <div class="collection__info">
                <h6 class="collection__info-title">
                   Truffaut literally trust
@@ -171,7 +153,7 @@
          </div>
 
          <div class="collection__item">
-            <picture><source srcset="img/page/collection-5.webp" type="image/webp"><img class="collection__img" src="img/page/collection-5.jpg" alt=""></picture>
+            <picture><source srcset="img/page/collection5.webp" type="image/webp"><img class="collection__img" src="img/page/collection5.jpg" alt=""></picture>
             <div class="collection__info">
                <h6 class="collection__info-title">
                   Truffaut literally trust
@@ -249,6 +231,176 @@
       </div>
    </div>
 </section>
+
+<div class="gallery">
+   <div class="container-fluid">
+      <div class="gallery__buttons">
+         <button class="gallery__btn" data-filter=".bedroom">Bedroom furniture</button>
+         <button class="gallery__btn" data-filter=".living">Living room furniture</button>
+         <button class="gallery__btn" data-filter=".office">Office furniture</button>
+         <button class="gallery__btn" data-filter=".dining">Dining room futniture</button>
+         <button class="gallery__btn" data-filter=".chair">Chair</button>
+      </div>
+
+      <div class="gallery__inner">
+         
+         <div class="gallery__items mix bedroom">
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-1.webp" type="image/webp"><img src="./img/page/gallery-1.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-2.webp" type="image/webp"><img src="./img/page/gallery-2.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-3.webp" type="image/webp"><img src="./img/page/gallery-3.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-4.webp" type="image/webp"><img src="./img/page/gallery-4.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-5.webp" type="image/webp"><img src="./img/page/gallery-5.jpg" alt=""></picture>
+            </a>
+         </div>
+
+         <div class="gallery__items mix living">
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-1.webp" type="image/webp"><img src="./img/page/gallery-1.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-2.webp" type="image/webp"><img src="./img/page/gallery-2.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-3.webp" type="image/webp"><img src="./img/page/gallery-3.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-4.webp" type="image/webp"><img src="./img/page/gallery-4.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-5.webp" type="image/webp"><img src="./img/page/gallery-5.jpg" alt=""></picture>
+            </a>
+         </div>
+         
+         <div class="gallery__items mix office">
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-1.webp" type="image/webp"><img src="./img/page/gallery-1.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-2.webp" type="image/webp"><img src="./img/page/gallery-2.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-3.webp" type="image/webp"><img src="./img/page/gallery-3.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-4.webp" type="image/webp"><img src="./img/page/gallery-4.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-5.webp" type="image/webp"><img src="./img/page/gallery-5.jpg" alt=""></picture>
+            </a>
+         </div>
+
+         <div class="gallery__items mix dining">
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-1.webp" type="image/webp"><img src="./img/page/gallery-1.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-2.webp" type="image/webp"><img src="./img/page/gallery-2.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-3.webp" type="image/webp"><img src="./img/page/gallery-3.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-4.webp" type="image/webp"><img src="./img/page/gallery-4.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-5.webp" type="image/webp"><img src="./img/page/gallery-5.jpg" alt=""></picture>
+            </a>
+         </div>
+
+         <div class="gallery__items mix chair">
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-1.webp" type="image/webp"><img src="./img/page/gallery-1.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-2.webp" type="image/webp"><img src="./img/page/gallery-2.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-3.webp" type="image/webp"><img src="./img/page/gallery-3.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-4.webp" type="image/webp"><img src="./img/page/gallery-4.jpg" alt=""></picture>
+            </a>
+            <a href="" class="gallery__item">
+               <picture><source srcset="./img/page/gallery-5.webp" type="image/webp"><img src="./img/page/gallery-5.jpg" alt=""></picture>
+            </a>
+         </div>
+
+      </div>
+   </div>
+</div>
+
+<section class="blog">
+   <div class="container">
+      <h3 class="blog__title">
+         More inspiration ideas in our blog
+      </h3>
+      <div class="blog__row">
+
+         <div class="blog__item">
+            <a href="blog__img-link">
+               <picture><source srcset="./img/page/blog-1.webp" type="image/webp"><img src="./img/page/blog-1.jpg" alt="" class="blog__img"></picture>
+            </a>
+            <div class="blog__link">
+               <span class="blog__item-date">
+                  March 12, 2020
+               </span>
+               <p class="blog-separation">
+                  |
+               </p>
+               <a href="#" class="author">
+                  by Ann Summers
+               </a>
+               <p class="blog-separation">
+                  |
+               </p>
+               <a href="#" class="theme">
+                  Inrerior
+               </a>
+            </div>
+            <h4 class="blog__item-title">
+               Listicle actually selvage activated charcoal for the drinking vinegar 
+            </h4>
+         </div>
+
+         <div class="blog__item">
+            <a href="blog__img-link">
+               <picture><source srcset="./img/page/blog-2.webp" type="image/webp"><img src="./img/page/blog-2.jpg" alt="" class="blog__img"></picture>
+            </a>
+            <div class="blog__link">
+               <span class="blog__item-date">
+                  September 28,2020
+               </span>
+               <p class="blog-separation">
+                  |
+               </p>
+               <a href="#" class="author">
+                  by Finnagan Morningstar
+               </a>
+               <p class="blog-separation">
+                  |
+               </p>
+               <a href="#" class="theme">
+                  Dining room interior
+               </a>
+            </div>
+            <h4 class="blog__item-title">
+               Red selfies edison bulb four dollar toast humblebrag
+            </h4>
+            
+         </div>
+
+      </div>
+   </div>
+</section>
             </main>
             
             <footer class="footer">
@@ -322,7 +474,6 @@
 </footer>
 
         </div>
-
         
     </body>
 </html>
